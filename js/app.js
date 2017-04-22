@@ -123,7 +123,7 @@ Player.prototype.renderScoreBoard = function() {
     ctx.save();
 };
 Player.prototype.handleInput = function(key) {
-    if (key === 'left' && this.x > 0) {
+    if (key === 'left' && this.x > 101) {
         this.x -= TILE_WIDTH;
     } else if (key === 'right' && this.x < 395) {
         this.x += TILE_WIDTH;
